@@ -1,0 +1,45 @@
+#include<stdio.h>
+struct timestamp{
+
+struct{
+	int hour;
+	int min;
+	int s;
+}time;
+struct{
+	int year;
+	int month;
+	int day;
+}date;
+};
+
+int main(){
+	struct timestamp em;
+	print("Enter hour:");
+	scanf("%d%*c",&em.time.hour);
+	
+	print("Enter minute:");
+	scanf("%d%*c",&em.time.min);
+	
+	print("Enter seconds:");
+	scanf("%d%*c",&em.time.s);
+
+
+print("Enter year :");
+	scanf("%d%*c",&em.date.year);
+
+
+print("Enter month:");
+	scanf("%d%*c",&em.date.month);
+
+
+print("Enter day:");
+	scanf("%d%*c",&em.date.day);
+	
+	
+	printf("Displaying overall timestamp");
+	
+	printf("%d");
+	printf("Displaying overall timestamp");
+	
+}
