@@ -1,0 +1,69 @@
+// WAP to create a structure called student to get the details of 4 students such as
+//Roll no.,Full Name, Address, Gender, Phone Number, Faculty, Batch Year, Section.
+//Display all the details of the student using a structure variable.
+#include<stdio.h>
+ struct student{
+ 	int roll;
+ 	char name [20];
+ 	char address[20];
+ 	char gender;
+ 	long long int phoneno;
+ 	char faculty[15];
+ 	int batch_year;
+ 	char section;
+ }s[4];
+ int main(){
+ 	int i;
+ 	for(i=0;i<4;i++){
+ 	printf("Enter roll number:");
+ 	scanf("%d%*c",&s[i].roll);
+ 	
+ 	printf("Enter name :");
+ 	scanf("%s%*c",s[i].name);
+ 	
+ 	printf("Enter address:");
+ 	scanf("%s%*c",s[i].address);
+
+
+printf("Enter gender :");
+ 	scanf("%c%*s",&s[i].gender);
+
+
+printf("Enter phone number:");
+ 	scanf("%lld%*c",&s[i].phoneno);
+
+
+printf("Enter faculty:");
+ 	scanf("%s%*c",s[i].faculty);
+
+
+printf("Enter batch year:");
+ 	scanf("%d",&s[i].batch_year);
+
+
+printf("Enter section:");
+ 	scanf("%c",&s[i].section);
+ 	
+ 	
+ 	printf("\nThe details are:");
+ 	
+ 	printf("\nRoll number :%d",s[i].roll);
+ 	
+ 	printf("\nName is %s :%",s[i].name);
+ 	
+ 	printf("\nAddress %s:%s",s[i].address);
+ 	
+ 	printf(" \nGender:%c",s[i].gender);
+ 	
+ 	printf("\n Phone number:%lld",s[i].phoneno);
+ 	
+ 	printf(" \n FAculty :%s",s[i].faculty);
+ 	
+ 	printf("\nBatch year :%d",s[i].batch_year);
+
+    printf(" \nSection:%c",s[i].section);
+}
+    
+    	return 0;
+ }
+ 	
